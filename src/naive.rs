@@ -20,6 +20,5 @@ pub fn naive(path: &str) -> HashMap<String, f32> {
             .unwrap();
         hm.insert(station, temp);
     }
-
-    1.0
+    hm
 }
