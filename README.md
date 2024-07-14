@@ -8,4 +8,4 @@ Originally designed for Java developers, see [link](https://github.com/gunnarmor
 This implementation will be in rust and will have three objectives:
 * Learn more about rust
 * Learn how to profile, benchmark & optimize rust code
-* Learn more about rust Async, Paralellism & Concurrency
+* Learn more about rust Async, Parallelism & Concurrency
