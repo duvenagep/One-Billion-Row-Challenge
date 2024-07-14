@@ -14,8 +14,11 @@ pub fn naive(path: &str) -> HashMap<String, f32> {
     let mut hm: HashMap<String, f32> = HashMap::new();
     let lines = read_lines(path);
     for line in lines {
-        let (station, temp) = line.split_once(";").unwrap();
-        hm.insert(station, temp)
+        let (station, temp) = line
+            .split_once(";")
+            .map(|(s, t)| (s.to_string(), t.parse::<f32>().unwrap()))
+            .unwrap();
+        hm.insert(station, temp);
     }
 
     1.0

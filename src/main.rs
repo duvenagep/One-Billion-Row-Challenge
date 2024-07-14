@@ -1,3 +1,6 @@
+/// List of Implementations and optimisations
+///
+/// 1. Naive ->
 mod naive;
 
 use naive::read_lines;
